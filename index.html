@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Shoppig Cart</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar bg-base-100 shadow-2xl lg:px-12">
+            <div class="flex-1">
+              <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+            </div>
+            <div class="flex-none gap-2">
+              <div class="form-control">
+                <input type="text" placeholder="Search" class="input input-bordered" />
+              </div>
+              <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                  <div class="w-10 rounded-full">
+                    <img src="https://picsum.photos/200/300" />
+                  </div>
+                </label>
+                <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+                  <li>
+                    <a class="justify-between">
+                      Profile
+                      <span class="badge">New</span>
+                    </a>
+                  </li>
+                  <li><a>Settings</a></li>
+                  <li><a>Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </header>
+    <main>
+        <section>
+            <div class="product-details w-[75%] bg-red-300 grid lg:grid-cols-3 gap-3">
+                <div class="card card-compact w-full h-3/5 bg-base-100 shadow-xl mt-5 mx-5">
+                    <figure><img  src="images/coffee.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Coffee!</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, corrupti.</p>
+                      <p>Price : $<span>110</span></p>
+                      <p>Quantity : 10</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Add To Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card card-compact w-full h-3/5 bg-base-100 shadow-xl mt-5 mx-5">
+                    <figure><img  src="images/heart_js.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Heart!</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, corrupti.</p>
+                      <p>Price : $<span>200</span></p>
+                      <p>Quantity : 10</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Add To Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card card-compact w-3/5 h-3/5 bg-base-100 shadow-xl mt-5 mx-5">
+                    <figure><img  src="images/panda.png" alt="Panda" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Panda!</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, corrupti.</p>
+                      <p>Price : $<span>250</span></p>
+                      <p>Quantity : 10</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Add To Cart</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="card-details">
+
+            </div>
+        </section>
+        
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
